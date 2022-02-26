@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Sistema de Países</h1>
+    Seu pais é <input type="text" name="pais" id="pais">
+    <input type="button" value="localizar">
+    <div id="res">
+
+    </div>
+    <script>
+        var text = window.document.getElementById(pais) 
+        var res = document.getElementById('div#res')
+        var vel = String(txtv.value)
+        res.innerText(`Seu país é ${vel}Km/h`)
+
+        if (vel != 'Brasil') {
+    console.log('Você é Estrangeiro!')
+}
+else {
+    console.log('Você é Brasileiro')
+}
+        
+        
+    </script>
+</body>
+</html>
