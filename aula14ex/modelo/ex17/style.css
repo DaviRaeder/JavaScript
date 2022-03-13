@@ -8,6 +8,10 @@ color: white;
 text-align: center;
 }
 
+select {
+    overflow:hidden;
+}
+
 section{
 background-color: white;
 border-radius: 10px;
