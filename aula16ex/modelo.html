@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Analisador de Números</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Analisador de Números</h1>
     </header>
 
     <section>
          <div>
-             Testando...
+             <p>Número (entre 1 e 200): <input type="number" name="inputnum" id="num"> <input type="button" value="Adicionar" onclick="adicionar()"></p>
+             <br>
+             <select name="flista" id="lista" size="6"></select>
+             <br>
+             <input type="button" value="Finalizar" onclick="finalizar()">
          </div>
 
-         <div>
-            Olá
+         <div id="res">
+            
          </div>
     </section>
 
