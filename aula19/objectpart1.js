@@ -138,21 +138,21 @@ var usuario6 = {
     }
 }
 
-console.log(usuario6.atual) // {nome: 'Ayrton', idade: '26'}
-usuario.proximo()
+console.log(usuario.atual) // {nome: 'Ayrton', idade: '26'}
+usuario.proximo();
 
-console.log(usuario6.atual) // {nome: 'João', idade: '19'}
+console.log(usuario.atual) // {nome: 'João', idade: '19'}
+usuario.proximo();
 
-usuario.proximo()
-console.log(usuario6.atual) // {nome: 'Maria', idade: '21'}
+console.log(usuario.atual) // {nome: 'Maria', idade: '21'}
+usuario.anterior();
 
-usuario.anterior()
-console.log(usuario6.atual) // {nome: 'João', idade: '19'}
+console.log(usuario.atual) // {nome: 'João', idade: '19'}
 
 usuario.atual = 0
-console.log(usuario6.atual) // {nome: 'Ayrton', idade: '26'}
+console.log(usuario.atual) // {nome: 'Ayrton', idade: '26'}
 
 usuario.atual = 2
-console.log(usuario6.atual) // {nome: 'Maria', idade: '21'}
+console.log(usuario.atual) // {nome: 'Maria', idade: '21'}
 
  
