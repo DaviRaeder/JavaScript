@@ -8,21 +8,22 @@
     <style>
         body {
             background-color: rgb(105, 105, 173);
-            color: white;
+            color: white; /* Comentário em CSS */
             font: normal 20pt arial;
         }
 
         h1 {
-            color: lime;
+            color: rgb(255, 212, 22);
         }
     </style>
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
-    <p>Já me livrei da maldição!!</p>
+    <h1>Olá, mundo!</h1> <!-- Isso é um comentário -->
+    <p>Já me livrei da maldição!!</p> 
     <script>
-       var nome = window.prompt('Qual é seu nome?')  // Vai fazer uma pergunta...
-       window.alert('É um grande prazer te conhece, ' + nome) // concatenação
+        var nome = window.prompt('Qual é seu nome?')  // Vai fazer uma pergunta...
+        window.alert(`É um grande prazer em te conhecer, ${nome}!`)
+
     </script>
 </body>
 </html>
