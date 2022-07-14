@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Sistema de países</h1>
+    Qual país você mora? <input type="text" name="txtext" id="txtext">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var txt = document.getElementById('txtext') 
+            var país = txt.value 
+            var res = document.getElementById('res')
+            if(país != 'Brasil') {
+                res.innerHTML = `Você vive em <strong>${país}</strong> <br>`
+                res.innerHTML += 'Você é estrangeiro!'
+            } else {
+                res.innerHTML = `Você vive em <strong>${país}</strong> <br>`
+                res.innerHTML += 'Você é Brasileiro'
+            }
+
+        }
+    </script>
+</body>
+</html>

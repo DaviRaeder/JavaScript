@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificador de Idade</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body onload="carregar()">
     <header>
         <h1>Verificador de Idade</h1>
     </header>
 
     <section>
-         <div>
-            <p>Ano de Nascimento:
+        <div>
+            <p><label for="txtano">Ano de Nascimento:</label>
                 <input type="number" name="txtano" id="txtano" min="0">
             </p>
-            <p>Sexe:
+            <p>Sexo:
                 <input type="radio" name="radsex" id="mas" checked>
                 <label for="mas">Masculino</label>
                 <input type="radio" name="radsex" id="fem">
@@ -26,14 +26,16 @@
             <p>
                 <input type="button" value="Verificar" onclick="verificar()">
             </p>
-         </div>
-
-         <div id="res">
+        </div>
+        
+        <div id="res">
             Preencha os dados acima para ver o resultado!
-         </div>
+        </div>
     </section>
 
-       
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; Davi Raeder</p>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
