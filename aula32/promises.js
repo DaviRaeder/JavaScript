@@ -1,0 +1,10 @@
+/*
+  SINGLE THREAD
+  IO não bloqueante
+
+  ASSINCRONA
+  EX: BANCO PEGAR O CEP
+  CEP -> CORREIOS
+
+  PROMISES
+*/
