@@ -1,23 +1,15 @@
-let arr = [1, 2, 3, 4, 5]
-let arr2 = []
+const reg1 = new RegExp('bola')
 
-function iterarArray(arr) {
-  if(arr.length == 0) {
-    throw new Error('O array precisa ter pelo menos um elemento')
-  } else {
-    for(let i = 0; i < arr.length; i ++) {
-      console.log(i)
-    }
-  }
-}
+console.log(reg1.test('Tem bola?'))
+console.log(reg1.test('Não tem'))
 
-function arrayVazio(arr) {  
-  if(arr.length > 0) {
-    throw new Error('O array não pode ter elementos')
-  } else {
-    console.log('Agora deu certo')
-  }
-}
+const reg2 = /bola/
 
-iterarArray(arr)
-iterarArray(arr2)
+let text = 'Tem bola na cesta'
+
+console.log(reg2.test('Tem bola?'))
+console.log(reg2.test('Não tem'))
+console.log(reg2.test(text))
+
+console.log(/quadrado/.test('Onde tem um quadrado?'))
+console.log(/quadrado/.test('qqqqqquadradoooooo'))
